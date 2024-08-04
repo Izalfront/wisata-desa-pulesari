@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Rubik', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.section-1 {
+  position: relative;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 14px;
+  box-sizing: border-box;
+  z-index: 1;
+  padding-left: 22%;
+  padding-right: 22%;
+  margin-top: 2%;
+}
+
+.header a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.home-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  z-index: 2;
+}
+
+.content p {
+  font-size: 3em;
+}
+
+.welcome {
+  grid: column;
+  line-height: -2.5;
+  margin-top: 40%;
+  margin-bottom: 90%;
+}
+
+.welcome p {
+  margin-bottom: 0;
+}
+
+.welcome .home-pulesari {
+  margin-top: 0;
+  font-size: 40px;
+  font-weight: 500;
+}
+.content p {
+  font-size: 1.2em;
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.explore-button {
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+/* section 2 */
+.section-2 {
+  position: relative;
+  background: linear-gradient(to bottom, rgba(89, 64, 53, 0), rgba(26, 12, 6, 1) 25%, rgba(26, 12, 6, 1) 100%);
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  margin-top: -200px;
+  z-index: 1;
+  color: white;
+}
+
+/* section 3 */
+.section-3 {
+  position: relative;
+  background: rgba(26, 12, 6, 1);
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+/* section 4 */
+.section-4 {
+  position: relative;
+  background: rgb(255, 255, 255);
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  color: black;
+}
+
+/* section 5 */
+.section-5 {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  color: white;
+}
+
+.footer {
+  position: relative;
+  height: 16vh;
+  width: 100%;
+  object-fit: cover;
+  color: white;
+}
