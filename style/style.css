@@ -72,11 +72,26 @@ body {
   line-height: 1.5;
 }
 
-.explore-button {
+.explore-button:hover {
   padding: 10px 28px;
   background-color: white;
   color: black;
   border: none;
+  cursor: pointer;
+  border: solid 1px transparent;
+  font-size: 1em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.explore-button {
+  padding: 10px 28px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: solid 1px white;
   cursor: pointer;
   font-size: 1em;
   border-radius: 20px;
@@ -98,14 +113,131 @@ body {
   color: white;
 }
 
+.container-section2 {
+  position: absolute;
+  grid: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.introduction-village {
+  margin-top: 16rem;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+}
+
+.line-section2 {
+  border: none;
+  height: 2px;
+  background-color: white;
+  width: 15%;
+  margin: 20px auto;
+}
+
+.content-explore {
+  margin-top: 5rem;
+  grid: 2;
+  display: flex;
+  width: max-content;
+}
+
+.maps-img {
+  width: 500px;
+  height: 350px;
+  transform: translateX(-6rem);
+}
+
+.header-explore2 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.desc-explore2 {
+  font-weight: 100;
+  line-height: 1.5;
+}
+
+.btn-location {
+  margin-top: 38px;
+  padding: 10px 28px;
+  background-color: white;
+  color: black;
+  border: solid 2px transparent;
+  cursor: pointer;
+  border: solid 1px transparent;
+  font-size: 0.8em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-location:hover {
+  margin-top: 38px;
+  padding: 10px 28px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: solid 2px white;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
 /* section 3 */
 .section-3 {
   position: relative;
-  background: rgba(26, 12, 6, 1);
+  background: rgb(26, 12, 6, 1);
   height: 100vh;
   width: 100%;
   object-fit: cover;
   color: white;
+}
+
+.card {
+  display: flex;
+  max-width: 800px;
+  background-color: #2e1f18;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-image {
+  width: 50%;
+  object-fit: cover;
+}
+
+.card-content {
+  width: 50%;
+  padding: 20px;
+  color: #fff;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.card-author {
+  margin-top: auto;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.author-title {
+  color: #007bff;
+  font-size: 12px;
 }
 
 /* section 4 */
