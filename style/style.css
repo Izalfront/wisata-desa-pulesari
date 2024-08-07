@@ -195,18 +195,25 @@ body {
 .section-3 {
   position: relative;
   background: rgb(26, 12, 6, 1);
-  height: 100vh;
+  height: 155vh;
   width: 100%;
   object-fit: cover;
   color: white;
 }
 
+.container3 {
+  display: flex;
+  padding-top: 150px;
+  justify-content: center;
+  justify-items: center;
+}
+
 .card {
   display: flex;
-  max-width: 800px;
-  background-color: #2e1f18;
+  max-width: 600px;
+  background-color: #331a0c;
   overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
 }
 
 .card-image {
@@ -222,8 +229,15 @@ body {
 
 .card-text {
   font-size: 14px;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.card-text3 {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 100;
+  margin-right: 80px;
 }
 
 .card-author {
@@ -236,8 +250,20 @@ body {
 }
 
 .author-title {
-  color: #007bff;
+  color: #918efb;
   font-size: 12px;
+  font-weight: 500;
+}
+
+.desc3-3 {
+  margin-left: 80px;
+}
+
+.arrow-circle {
+  display: flex;
+  margin-top: 80px;
+  width: 4%;
+  transform: translate(1150%, 70%);
 }
 
 /* section 4 */
