@@ -10,36 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital@0;1&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style/transition.css" />
   </head>
   <body>
     <section class="section-1">
-      <header class="header">
-        <a href="#">Home</a>
-        <a href="#">Tour packages</a>
+      <header class="header fade-in">
+        <a href="#section-2">Home</a>
+        <a href="#section-4">Tour packages</a>
         <a href="#">Login</a>
       </header>
       <img src="img/home.png" alt="" class="home-img" />
       <div class="content">
-        <div class="welcome">
+        <div class="welcome fade-out">
           <p>Welcome to</p>
-          <p class="home-pulesari">Pulesari Tourism Village</p>
+          <p class="home-pulesari fade-out">Pulesari Tourism Village</p>
         </div>
-        <p class="desc-home">
+        <p class="desc-home fade-scroll">
           Discover Pulesari's unique charm, where local culture and <br />natural beauty blend for an unforgettable experience.<br />
           Explore our village and enjoy every moment!
         </p>
-        <button class="explore-button">Explore</button>
+        <a href="#section-3" class="explore-button fade-scroll">Explore</a>
       </div>
     </section>
-    <section class="section-2">
+    <section id="section-2" class="section-2">
       <div class="container-section2">
-        <p class="introduction-village">Introduction Pulesari Village</p>
-        <hr class="line-section2" />
+        <p class="introduction-village fade-scroll">Introduction Pulesari Village</p>
+        <hr class="line-section2 fade-scroll" />
         <div class="content-explore">
           <img class="maps-img" src="img/map.png" alt="" />
           <div class="content-text2">
-            <p class="header-explore2">Explore Pulesari tourism here</p>
-            <p class="desc-explore2">
+            <p class="header-explore2 fade-scroll">Explore Pulesari tourism here</p>
+            <p class="desc-explore2 fade-scroll">
               Pulesari Village is located in Turi District,<br />
               Sleman Regency, Yogyakarta Special Region,<br />
               Indonesia. This village is known for its<br />
@@ -48,15 +49,15 @@
               and natural charm.
             </p>
 
-            <button class="btn-location">Check Location</button>
+            <button class="btn-location fade-scroll">Check Location</button>
           </div>
         </div>
       </div>
     </section>
-    <section class="section-3">
+    <section id="section-3" class="section-3">
       <div class="container3">
         <div class="desc3">
-          <p class="card-text3">
+          <p class="card-text3 fade-scroll">
             White water rafting at Pulesari Tourism<br />
             Village offers an exciting adventure <br />
             along the river with beautiful natural <br />
@@ -65,9 +66,9 @@
             in one unforgettable experience.
           </p>
           <div class="spasi-top"></div>
-          <button class="explore-button">Explore Event</button>
+          <button class="explore-button fade-in">Explore Event</button>
         </div>
-        <div class="card">
+        <div class="card fade-scroll">
           <img src="img/waterfall.jpeg" alt="White water rafting at Pulesari Tourism Village" class="card-image" />
           <div class="card-content">
             <p class="card-text">
@@ -82,7 +83,7 @@
         </div>
       </div>
       <div class="container3">
-        <div class="card">
+        <div class="card fade-scroll">
           <img src="img/penari.jpg" alt="White water rafting at Pulesari Tourism Village" class="card-image" />
           <div class="card-content">
             <p class="card-text">
@@ -96,7 +97,7 @@
           </div>
         </div>
         <div class="desc3-3">
-          <p class="card-text3">
+          <p class="card-text3 fade-scroll">
             White water rafting at Pulesari Tourism<br />
             Village offers an exciting adventure <br />
             along the river with beautiful natural <br />
@@ -105,50 +106,50 @@
             in one unforgettable experience.
           </p>
           <div class="spasi-top"></div>
-          <button class="explore-button">Explore Event</button>
+          <button class="explore-button fade-in">Explore Event</button>
         </div>
       </div>
       <img class="arrow-circle" src="img/circle arrow.png" alt="" />
     </section>
     <section class="section-4">
       <div class="center">
-        <p class="tour-packages">Tour Packages</p>
+        <p class="tour-packages fade-scroll">Tour Packages</p>
       </div>
       <div class="container4">
         <div class="card4">
           <div class="card-content4">
-            <p class="package">Tour Package</p>
-            <p class="card-text4">
+            <p class="package fade-scroll">Tour Package</p>
+            <p class="card-text4 fade-scroll">
               White water rafting at Pulesari Tourism Village offers an <br />
               exciting adventure along the river with beautiful natural <br />
               views. Suitable for all ages, this activity combines <br />
               challenge and natural beauty in one unforgettable <br />
               experience.
             </p>
-            <div class="detail-tour">
+            <div class="detail-tour fade-in">
               <button class="btn-detail">See Detail</button>
               <div class="spasi"></div>
               <p class="price">Start at <span class="price-value">6$</span> /Days</p>
             </div>
           </div>
-          <img src="img/danau.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4" />
+          <img src="img/danau.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4 fade-in-image" />
           <div class="spasi"></div>
         </div>
       </div>
-      <div class="container4">
+      <div id="section-4" class="container4">
         <div class="card4">
-          <img src="img/tour2.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4" />
+          <img src="img/tour2.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4 fade-in-image" />
           <div class="spasi-2"></div>
           <div class="card-content4">
-            <p class="package">Tour Package</p>
-            <p class="card-text4">
+            <p class="package fade-scroll">Tour Package</p>
+            <p class="card-text4 fade-scroll">
               White water rafting at Pulesari Tourism Village offers an <br />
               exciting adventure along the river with beautiful natural <br />
               views. Suitable for all ages, this activity combines <br />
               challenge and natural beauty in one unforgettable <br />
               experience.
             </p>
-            <div class="detail-tour">
+            <div class="detail-tour fade-in">
               <button class="btn-detail">See Detail</button>
               <div class="spasi"></div>
               <p class="price">Start at <span class="price-value">6$</span> /Days</p>
@@ -159,35 +160,35 @@
       <div class="container4">
         <div class="card4">
           <div class="card-content4">
-            <p class="package">Tour Package</p>
-            <p class="card-text4">
+            <p class="package fade-scroll">Tour Package</p>
+            <p class="card-text4 fade-scroll">
               White water rafting at Pulesari Tourism Village offers an <br />
               exciting adventure along the river with beautiful natural <br />
               views. Suitable for all ages, this activity combines <br />
               challenge and natural beauty in one unforgettable <br />
               experience.
             </p>
-            <div class="detail-tour">
+            <div class="detail-tour fade-in">
               <button class="btn-detail">See Detail</button>
               <div class="spasi"></div>
               <p class="price">Start at <span class="price-value">6$</span> /Days</p>
             </div>
           </div>
-          <img src="img/tour3.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4" />
+          <img src="img/tour3.png" alt="White water rafting at Pulesari Tourism Village" class="card-image4 fade-in-image" />
           <div class="spasi"></div>
         </div>
       </div>
     </section>
     <section class="section-gradient">
       <div class="container-grd">
-        <p class="head-grd">Your Exploration Starts Here</p>
-        <p class="desc-grd">
-          Lorem Ipsum is simply dummy text of the printing and typesetting <br />
+        <p class="head-grd fade-scroll">Your Exploration Starts Here</p>
+        <p class="desc-grd fade-scroll">
+          Lorem Ipsum is simply dummy text of the printing and typesetting <br />
           industry. Lorem Ipsum has been the industry's standard dummy <br />
           text ever since the 1500s
         </p>
-        <hr class="line-sectiongrd" />
-        <div class="contact-grd">
+        <hr class="line-sectiongrd fade-scroll" />
+        <div class="contact-grd fade-scroll">
           <p>085603964739</p>
           <p>rizalhajakubastarus@gmail.com</p>
         </div>
@@ -197,11 +198,12 @@
       <img src="img/footer.jpg" alt="" class="home-img" />
     </section>
     <footer class="footer">
-      <div class="container-footer">
+      <div class="container-footer fade-scroll">
         <a href="#">About Camp</a>
         <a href="#">Events</a>
         <a href="#">FAQs</a>
       </div>
     </footer>
   </body>
+  <script src="animation.js"></script>
 </html>

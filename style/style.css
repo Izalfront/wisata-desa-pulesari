@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,6 +10,7 @@ body {
   font-style: normal;
 }
 
+/* section 1 */
 .section-1 {
   position: relative;
 }
@@ -24,10 +29,38 @@ body {
   margin-top: 2%;
 }
 
+.fade-in a {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+}
+
+.loaded .fade-in a {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .header a {
+  position: relative;
   color: white;
   text-decoration: none;
   font-size: 1.5em;
+  padding-bottom: 5px;
+}
+
+.header a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transition: width 0.3s ease;
+}
+
+.header a:hover::after {
+  width: 100%;
 }
 
 .home-img {
@@ -72,12 +105,17 @@ body {
   line-height: 1.5;
 }
 
+.desc-home {
+  padding-bottom: 20px;
+}
+
 .explore-button:hover {
   padding: 10px 28px;
   background-color: white;
   color: black;
   border: none;
   cursor: pointer;
+  text-decoration: none;
   border: solid 1px transparent;
   font-size: 1em;
   border-radius: 20px;
@@ -94,6 +132,7 @@ body {
   border: solid 1px white;
   cursor: pointer;
   font-size: 1em;
+  text-decoration: none;
   border-radius: 20px;
   font-weight: normal;
   font-style: normal;
@@ -206,6 +245,7 @@ body {
   padding-top: 150px;
   justify-content: center;
   justify-items: center;
+  transition: transform 0.3s ease-in-out;
 }
 
 .card {
@@ -261,9 +301,25 @@ body {
 
 .arrow-circle {
   display: flex;
+  cursor: pointer;
   margin-top: 80px;
   width: 4%;
   transform: translate(1198%, 70%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.arrow-circle:hover {
+  animation: bounce 0.8s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translate(1198%, 80%);
+  }
+  50% {
+    transform: translate(1198%, 65%);
+  }
 }
 
 .spasi-top {
@@ -465,8 +521,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 50px;
-  margin-right: 23%;
-  margin-left: 20%;
+  margin-right: 29%;
+  margin-left: 26%;
 }
 
 .container-footer a {
