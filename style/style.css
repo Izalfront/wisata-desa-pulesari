@@ -263,19 +263,142 @@ body {
   display: flex;
   margin-top: 80px;
   width: 4%;
-  transform: translate(1150%, 70%);
+  transform: translate(1198%, 70%);
 }
 
+.spasi-top {
+  margin-top: 50px;
+}
 /* section 4 */
 .section-4 {
   position: relative;
   background: rgb(255, 255, 255);
-  height: 100vh;
+  height: 250vh;
   width: 100%;
   object-fit: cover;
   color: black;
+  z-index: 2;
 }
 
+.center {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.tour-packages {
+  margin-top: 10rem;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.container4 {
+  display: flex;
+  padding-top: 120px;
+  justify-content: center;
+  justify-items: center;
+}
+
+.card4 {
+  display: flex;
+  max-width: 850px;
+  background-color: #ffffff;
+  overflow: hidden;
+}
+
+.card-image4 {
+  width: 40%;
+  object-fit: cover;
+}
+
+.card-content4 {
+  width: 50%;
+  padding: 20px;
+  color: #000000;
+}
+
+.card-text4 {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.card-text3 {
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: 100;
+  margin-right: 80px;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.desc3-3 {
+  margin-left: 80px;
+}
+
+.detail-tour {
+  display: flex;
+  align-items: center;
+}
+
+.btn-detail {
+  margin-top: 10px;
+  padding: 10px 28px;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: solid 1px rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-detail:hover {
+  margin-top: 10px;
+  padding: 10px 28px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: solid 1px rgb(0, 0, 0);
+  background-color: #000000;
+  cursor: pointer;
+  font-size: 0.8em;
+  border-radius: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.price {
+  margin-top: 25px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price-value {
+  font-weight: bold;
+}
+
+.package {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.spasi {
+  margin-right: 16px;
+}
+
+.spasi-2 {
+  margin: 16px;
+}
 /* section 5 */
 .section-5 {
   position: relative;
@@ -283,6 +406,7 @@ body {
   width: 100%;
   object-fit: cover;
   color: white;
+  z-index: 1;
 }
 
 .footer {
