@@ -272,8 +272,8 @@ body {
 /* section 4 */
 .section-4 {
   position: relative;
-  background: rgb(255, 255, 255);
-  height: 250vh;
+  background: white;
+  height: 230vh;
   width: 100%;
   object-fit: cover;
   color: black;
@@ -399,20 +399,94 @@ body {
 .spasi-2 {
   margin: 16px;
 }
+
+/* section gradient */
+.section-gradient {
+  position: absolute;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0), rgb(255, 255, 255) 30%, rgb(255, 255, 255) 100%);
+  z-index: 3;
+  height: 50vh;
+  width: 100%;
+}
+
+.container-grd {
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.head-grd {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.desc-grd {
+  line-height: 2;
+  padding-bottom: 20px;
+}
+
+.line-sectiongrd {
+  border: none;
+  height: 1px;
+  background-color: rgb(0, 0, 0);
+  width: 35%;
+  margin: 20px auto;
+}
+
+.contact-grd {
+  display: flex;
+  margin-right: 32.5%;
+  margin-left: 32.5%;
+  justify-content: space-between;
+}
+
 /* section 5 */
 .section-5 {
   position: relative;
-  height: 100vh;
+  height: 150vh;
   width: 100%;
   object-fit: cover;
   color: white;
-  z-index: 1;
+  background-color: #918efb;
+  margin-top: 100px;
 }
 
+/* footer */
 .footer {
   position: relative;
   height: 16vh;
   width: 100%;
   object-fit: cover;
-  color: white;
+  z-index: 3;
+}
+
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  margin-right: 23%;
+  margin-left: 20%;
+}
+
+.container-footer a {
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+  padding-bottom: 5px;
+}
+
+.container-footer a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.container-footer a:hover::after {
+  width: 100%;
 }
