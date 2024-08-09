@@ -39,10 +39,7 @@ The website's design was crafted using Figma, ensuring a user-friendly and visua
 To explore the full version of this website:
 
 1. Clone this repository
-2. Install the necessary dependencies
-3. Run the application on your local server
-
-Detailed setup instructions can be found in the project's documentation.
+2. Run the application on your local server
 
 ## Feedback and Contributions
 
